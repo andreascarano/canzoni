@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIAMO!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module">
+        import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      
+        new fairyDustCursor();
+      </script>
+    <div class="player-container">
+        <h1>La musica della mia persona preferitw❤️</h1>
+        <select id="track-selector">
+            <!-- Aggiungi qui le 55 tracce -->
+            <option value="2minuti.mp3">2minuti</option>
+            <option value="Allegria....mp3">Allegria...</option>
+            <option value="Briciole.mp3">Briciole</option>
+            <option value="Calcutta - Arbre Magique.mp3">Arbre Magique</option>
+            <option value="Calcutta - Benedetta.mp3">Benedetta</option>
+            <option value="Calcutta - Cane.mp3">Cane</option>
+            <option value="CALCUTTA - COSA MI MANCHI A FARE (piano session).mp3">Cosa mi manchi a fare (piano session)</option>
+            <option value="CALCUTTA - DEL VERDE (piano session).mp3">Del verde (piano session)</option>
+            <option value="Calcutta - Donna Favela [Oroscopo].mp3">Donna Favela</option>
+            <option value="Calcutta - Forse Ero Io.mp3">Forse Ero Io</option>
+            <option value="Calcutta - Frosinone (Acoustic).mp3">Frosinone (acoustic)</option>
+            <option value="CALCUTTA - GAETANO (piano session).mp3">Gaetano (piano session).mp3</option>
+            <option value="Calcutta - I dinosauri.mp3">I dinosauri</option>
+            <option value="Calcutta - Il tempo che resta.mp3">Il Tempo Che Resta</option>
+            <option value="milanocesso.mp3">Milano (cesso session)</option>
+            <option value="Calcutta - Notte.mp3">Notte</option>
+            <option value="Calcutta - Orgasmo (ft. Brunori Sas).mp3">Orgasmo (ft. Brunori Sas)</option>
+            <option value="Calcutta - Pesto - Live a Sorrisi.mp3">Pesto (live)</option>
+            <option value="Controtempo.mp3">Controtempo</option>
+            <option value="Coro.mp3">Coro</option>
+            <option value="CALCUTTA ＂Il tempo che resta＂ live @ dalVerme Roma.mp3">Il Tempo Che Resta (live)</option>
+            <option value="Cosa mi manchi a fare (Demo Version).mp3">Cosa Mi Manchi A Fare (demo)</option>
+            <option value="Calcutta - Pesto [Acustica].mp3">Pesto (acoustic)</option>
+            <option value="Cosa mi manchi a fare.mp3">Cosa Mi Manchi A Fare</option>
+            <option value="Dal verme.mp3">Del Verme</option>
+            <option value="Dateo.mp3">Dateo</option>
+            <option value="Del verde (Demo Version).mp3">Del Verde (demo)</option>
+            <option value="Del verde.mp3">Del Verde</option>
+            <option value="Frosinone (Demo Version).mp3">Frosinone (demo)</option>
+            <option value="Frosinone.mp3">Frosinone</option>
+            <option value="Gaetano (Demo Version).mp3">Gaetano (demo)</option>
+            <option value="Gaetano.mp3">Gaetano</option>
+            <option value="Ghiaccioli.mp3">Ghiaccioli</option>
+            <option value="Giro con te.mp3">Giro Con Te</option>
+            <option value="Hübner.mp3">Hübner</option>
+            <option value="Intermezzo 1.mp3">Intermezzo 1</option>
+            <option value="Intermezzo 2.mp3">Intermezzo 2</option>
+            <option value="Intermezzo 3.mp3">Intermezzo 3</option>
+            <option value="Kiwi.mp3">Kiwi</option>
+            <option value="Le barche.mp3">Le Barche</option>
+            <option value="Limonata (Demo Version).mp3">Limonata (demo)</option>
+            <option value="Limonata.mp3">Limonata</option>
+            <option value="Loneliness.mp3">Loneliness</option>
+            <option value="Milano (Demo Version).mp3">Milano (demo)</option>
+            <option value="Milano.mp3">Milano</option>
+            <option value="Nuda Nudissima.mp3">Nuda Nudissima</option>
+            <option value="Orgasmo.mp3">Orgasmo</option>
+            <option value="Paracetamolo.mp3">Paracetamolo</option>
+            <option value="Pesto.mp3">Pesto</option>
+            <option value="Preoccuparmi.mp3">Preoccuparmi</option>
+            <option value="Rai.mp3">Rai</option>
+            <option value="Saliva.mp3">Saliva</option>
+            <option value="Sorriso (Milano Dateo).mp3">Sorriso (Milano Dateo)</option>
+            <option value="SSD.mp3">SSD</option>
+            <option value="Tutti.mp3">Tutti</option>
+        </select>
+        <div class="player-controls">
+            <button id="prev-btn">PRIMM</button> 
+            <button id="play-pause-btn">APPICCIA</button>
+            <button id="stop-btn">STUTA</button>
+            <button id="next-btn">AROPP</button> 
+            <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+        </div>
+        <input type="range" id="progress-bar" value="0">
+        <audio id="audio-player" preload="auto">
+            <source id="audio-source" src="song1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

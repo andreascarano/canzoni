@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffa7a8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    text-align: center;
+    background-color: #b47778;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#file-input {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.player-controls {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ffa7a8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #926869;
+}
+
+#progress-bar {
+    width: 100%;
+    margin-top: 10px;
+}
